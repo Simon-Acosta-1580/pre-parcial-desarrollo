@@ -14,3 +14,6 @@ def saludo():
 @app.post("/estudiante", response_model=EstudianteId)
 async def create_estudiante(estudiante: EstudianteBase, session: SessionDep):
     return createEstudiante(estudiante, session)
+
+
+
